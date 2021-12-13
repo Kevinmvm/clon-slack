@@ -10,7 +10,7 @@ Una vez que tengas el resultado:
 ```shell
 $ git add .
 $ git commit -m "done"
-$ git push origin master
+$ git push origin main
 ```
 ## Enviament
 
