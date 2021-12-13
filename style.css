@@ -79,22 +79,23 @@ footer{
         "footer  footer" auto;
       }
 
+    .nav-bar {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        margin-top: -9%;
+    }
+
     .nav-bar img{
         position: fixed;
-        display: block;
+        display: flex;
         margin-top: -5%;
         margin-left: 5%;
         align-items: center;
         max-width: 100px;
         clip-path: inset(0px 0px 5px 0px);
-    }
-
-    .nav-bar {
-        width: 90%;
-        height: 100%;
-        z-index: 1;
-        display: inline-block;
-        margin-top: -10%;
+        background-color: white;
     }
 
     .nav-bar .hamburger{
@@ -735,26 +736,27 @@ footer{
     }
 }
 
-
-
 /*FULL SCREEN*/
+@media screen and (min-width: 1023px) and (max-width: 1800px){
+    .nav-bar {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        margin-top: -9%;
+    }
       
     .nav-bar img{
         position: fixed;
-        display: block;
+        display: flex;
         margin-top: -5%;
         margin-left: 5%;
         align-items: center;
         max-width: 100px;
+        z-index: 2;
         clip-path: inset(0px 0px 5px 0px);
-    }
-
-    .nav-bar {
-        width: 90%;
-        height: 100%;
-        z-index: 1;
-        display: inline-block;
-        margin-top: -10%;
+        background-color: white;
     }
 
     .nav-bar .hamburger{
@@ -766,8 +768,7 @@ footer{
         right: 20px;
     }
 
-    /*poner así en los que se ocltará*/
-    .nav-bar .nav-bar-right{
+    .nav-bar .hamburger i{
         display: none;
     }
 
@@ -775,47 +776,56 @@ footer{
         color: red;
     }
 
-    .nav-bar .nav-bar-right ul li{
-        display: inline-block;
+    .nav-bar .nav-bar-right{
+        position: fixed;
+        margin: 0%;
+        margin-top: -10%;
         width: 100%;
-        padding: 10px;
         background-color: white;
-        font-family: arial, sans-serif;
-        color: #5b5e6d;
-        font-size: 20px;
     }
 
-      .nav-bar-right.active{
-        display: block;
-        text-align: center;
+    .nav-bar .nav-bar-right ul{
+        margin-left: 60%;
+        margin-top: 5%;
+        display: flex;
+        align-items: flex-end;
+        background-color: white;
+        font-family: arial, sans-serif;
+    }
+
+    .nav-bar .nav-bar-right li{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        color: #5b5e6d;
+        font-size: 20px;
     }
 
 
     /*HEADER*/
 
-    
-
     header h1{
         position: relative;
-        margin-left: 5%;
+        margin-left: 50%;
         margin-top: 15%;
-        width: 90%;
+        width: 40%;
         font-size: 70px;
     }
 
     header p{
         position: relative;
-        margin-left: 5%;
-        margin-top: 5%;
-        font-size: 145%;
-        width: 90%;
+        margin-left: 50%;
+        margin-right: 0%;
+        font-size: 130%;
+        width: 40%;
         font-family: arial, sans-serif;
         color: #5b5e6d;
     }
 
     header button{
         position: relative;
-        margin-left: 35%;
+        margin-left: 50%;
+        margin-top: 2%;
         color: white;
         background: #192592;
         padding: 20px;
@@ -827,7 +837,7 @@ footer{
         align-items: center;
         width: 500px;
         max-width: 600px;
-        margin-left: 25%;
+        margin-top: -100%;
     }
 
 
@@ -849,13 +859,14 @@ footer{
     }
     
     main div p{
-        margin-top: 5%;
+        margin-top: 2%;
         width: 75%;
         margin-left: 15%;
         font-family: arial, sans-serif;
         color: #5b5e6d;
     }
     main div button{
+        margin-top: 2%;
         position: relative;
         text-align: center;
         align-items: center;
@@ -867,13 +878,19 @@ footer{
         font-weight: bold;
     }
     
-    main div img{
+    main div .mainCont{
+        margin-top: 3%;
+        width: 10%;
         display: flex;
-        width: 200px;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+    main div img{
+        width: 300px;
         max-width: 100%;
         padding: 30px;
-        margin-left: 35%;
-        align-items: center;
     }
     
     
@@ -888,6 +905,7 @@ footer{
         font-family: "Times New Roman", Times, serif;
         font-size: 25px;
         color: black;
+        font-weight: bold;
     }
 
     /*FOOTER*/
@@ -950,6 +968,6 @@ footer{
         padding: 5%;
     }
 
-
+}
 
 
