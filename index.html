@@ -11,25 +11,42 @@
       rel="stylesheet"
     />
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function(){
+        $(".hamburger").click(function(){
+          $(".nav-bar-right").toggleClass("active");
+        });
+      });
+    </script>
+
     <!-- link your styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav>
+    <nav class="nav-bar">
       <img src="./images/slack-logo.png" alt="slack_logo" />
+      
+      <div class="nav-bar-right">
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
-      <i class="fas fa-bars"></i>
-      <i class="fas fa-times"></i>
+    </div>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i></div>
     </nav>
+
+    
+
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
+      
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -39,7 +56,10 @@
       </p>
       <button type="button" name="button">GET STARTED</button>
       <p>Already using Slack? <a href="#">Sign in</a></p>
+      <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
+
+
     <main>
       <div>
         <h2>You're in good company</h2>
@@ -55,12 +75,14 @@
         <img src="./images/oracle-logo.png" alt="" />
         <img src="./images/ticketmaster-logo.png" alt="" />
       </div>
-      <div>
+      <div class ="try">
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
         <button type="button" name="button">GET STARTED</button>
       </div>
     </main>
+
+
     <footer>
       <div>
         <img src="./images/iso-slack.png" alt="" />
@@ -97,13 +119,13 @@
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
+      <div class="end">
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
+        <div class ="endFoot">
           <img src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
           <i class="fas fa-chevron-down"></i>
@@ -113,5 +135,7 @@
         </div>
       </div>
     </footer>
+
   </body>
+  
 </html>
