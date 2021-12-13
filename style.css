@@ -513,11 +513,11 @@ footer{
 
 /*PC*/
 
-@media screen and (min-width: 960px) and (max-width: 1024){
+@media screen and (min-width: 962px) and (max-width: 1024px){
     /*NAV*/
     .grid-container {
         grid-template:
-        "navbar  navbar" auto
+        "navbar  navbar" 200px
         "header  header" auto
         "main  main" auto
         "footer  footer" auto;
@@ -735,7 +735,6 @@ footer{
         padding: 5%;
     }
 }
-
 
 
 
