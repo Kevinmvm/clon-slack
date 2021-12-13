@@ -454,6 +454,7 @@ footer{
         display: flex;
         width: 100px;
         margin-left: 2%;
+        margin-top: -150px;
     }
     
     footer div ul{
@@ -478,16 +479,15 @@ footer{
         background-color: #F4F3F4;
     }
     footer .end ul{
-        display:  inline-flex;
+        display:  flex;
         width: 100%;
-        text-align: center;
-        margin-left: 12%;
         font-weight: bold;
+        margin-left: 25%;
     }
     
     footer .end .endFoot{
         display: inline-block;
-        width: 80%;
+        width: 100%;
         margin-left: 22%;
     }
     footer .end .endFoot img{
@@ -501,9 +501,10 @@ footer{
     }
     
     footer .end .endFoot i{
-        display: inline-flex;
-        margin-left: 0%;
-        width: 20%;
+        display: inline-block;
+        margin-left: -5%;
+        width: 28%;
+        max-width: 100%;
         padding: 5%;
     }
     
